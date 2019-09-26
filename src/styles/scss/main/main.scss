@@ -1,0 +1,123 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-news {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-100%);
+    background-color: #ffffff;
+    opacity: 0.5;
+    padding: 20px 55px 20px 30px;
+
+    &__title{
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+}
+
+.general-news {
+    
+    &-unshowen {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -24px);
+        transition: 1s;
+    }
+
+    &-showen {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -100%);
+        transition: 1s;
+    }
+
+    &__up-arrow {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate( -50%, 0);
+        background-color: #ffffff;
+        vertical-align: bottom;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__articles {
+        display: flex;
+        flex-direction: row;
+        min-width: 90vw;
+
+        &-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #e4c88c;
+            color: #000000;
+        }
+    
+        &-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+    
+        &-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+    }
+
+    &__title {
+        margin-bottom: 5px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+
+/*Slider*/
+@keyframes slidy {
+    0% { left: 0%; }
+    30% { left: 0%; }
+    36% { left: -100%; }
+    63% { left: -100%; }
+    70% { left: -200%; }
+    90% { left: -200%; }
+    100% { left: 0%; }
+}
+    
+div#slider { 
+    overflow: hidden;
+}
+
+div#slider figure img { 
+    width: 33.33%;
+    float: left; 
+}
+
+div#slider figure { 
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 16px;
+    animation: 20s slidy infinite; 
+}        

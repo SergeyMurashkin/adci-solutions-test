@@ -1,1 +1,0 @@
-# adci-solutions-test

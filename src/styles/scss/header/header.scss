@@ -1,0 +1,40 @@
+@import './navbar.scss';
+
+.header {
+    position: relative;
+    height: 130px;
+    padding-right: 38px;
+    background-color: #333333;
+}
+
+.logo-img {
+    float: left;
+    padding: 23px 1px 21px 37px;
+    width: 289px;
+    height: 86px;
+}
+
+.lock {
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+}
+
+.areariservata {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3px 38px 0 0;
+}
+
+.areariservata a {
+    display: block;
+    font-size: 13.8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.areariservata a:visited {
+    color: #d6caa2;
+}

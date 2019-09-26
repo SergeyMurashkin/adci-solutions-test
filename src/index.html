@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+    <body>
+        <header class="header">
+            <figure>
+                <img src="assets/logo-white.png" alt="logo_MM_Lampadari" class="logo-img"/>
+            </figure>
+            <div class="areariservata">
+                <a href="/area">area riservata
+                    <img src="assets/lock-mini.png" alt="lock_mini" class="lock"/>
+                </a> 
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/home">home</a></li>
+                    <li><a href="#">azienda</a>
+                        <ul>
+                            <li>
+                                <a href="#">storia</a>
+                                <ul>
+                                    <li><a href="#">storia_1</a></li>
+                                    <li><a href="/home">storia_2</a></li>
+                                    <li><a href="#">storia_3</a></li>
+                                    <li><a href="#">storia_4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/home">mm disign</a></li>
+                            <li><a href="#">disigner</a></li>
+                            <li><a href="#">certificazioni</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">collezioni</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">contatti</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <div id="slider">
+                <figure>
+                    <img src="assets/lampadari1.jpg" alt="Lampadari_example_1">
+                    <img src="assets/lampadari2.jpg" alt="Lampadari_example_2">
+                    <img src="assets/lampadari3.jpg" alt="Lampadari_example_3">
+                </figure>
+            </div>
+            <section class="main-news">
+                <article>
+                    <h1 class="main-news__title">Lampadari contemporanei</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do eiusmod tempor dolore</p>
+                </article>
+            </section>
+            <section class="general-news-unshowen" id="general-news">
+                <figure>
+                    <img id="up-arrow" src="/assets/up-arrow-angle.png" alt="up-arrow" class="general-news__up-arrow">
+                </figure>
+                <div class="general-news__articles">
+                    <article class="general-news__articles-1">
+                        <h2 class="general-news__title">Stai pensando ad un progetto?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                             sed do eiusmod tempor dolore</p>
+                    </article>
+                    <article class="general-news__articles-2">
+                        <h2 class="general-news__title">Vi aspettiamo alla fiera Euroluce</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                             sed do eiusmod tempor dolore</p>
+                    </article>
+                    <article class="general-news__articles-3">
+                        <h2 class="general-news__title">Scopri la nuova collezione</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                             sed do eiusmod tempor dolore</p>
+                    </article>
+                </div>   
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="about">
+                <section class="facts">
+                    <article class="facts__fact">
+                        <h4 class="facts__fact-title">Lampadari made in italy</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                    </article>
+                    <article class="facts__fact">
+                        <h4 class="facts__fact-title">Lampadari artigianaly</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                    </article>
+                    <article class="facts__fact">
+                        <h4 class="facts__fact-title">45 Anni di esperienza</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                    </article>
+                </section>
+                <section class="addresses">
+                    <ul>
+                        <li>MMLAMPADARI srl</li>
+                        <li>Via Feltrina 00</li>
+                        <li>31111 Pederobba (TV)</li>
+                        <li>0423.123456</li>
+                        <li>info@mmlampadari.mm</li>
+                        <li>P.IVA 04123456789</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="info-getting">
+                <section class="newsletter">
+                    <h4 class="newsletter__title">Newsletter</h4>
+                    <form action="" class="newsletter__form">
+                        <input type="text" placeholder="Nome e Cognome">
+                        <input type="text" placeholder="Email">
+                        <div class="newsletter__form-checkbox">
+                                <input type="checkbox">
+                                <span>Acconsento al trattamento dei dati</span>
+                        </div>
+                        
+                        <button>ISCRIVITI</button>
+                    </form>
+                    
+                </section>
+                <section class="contacts">
+                    <ul class="contacts__social-networks" >
+                        <li>fb</li>
+                        <li>in</li>
+                        <li>pi</li>
+                    </ul>
+                    <ul class="contacts__language" >
+                        <li>ITA</li>
+                        <li>ENG</li>
+                        <li>DEU</li>
+                        <li>RYC</li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>
